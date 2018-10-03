@@ -1,0 +1,30 @@
+mixin section-title(title, theme)
+	.section__title(class=`section__title--${theme}`)
+		.title__decor.title__decor-left(class=`title__decor-left--${theme}`)
+		.title__text(class=`title__text--${theme}`)
+			h2.title__text-content= title
+		.title__decor.title__decor-left(class=`title__decor-left--${theme}`).flip-horizontal
+
+
+mixin webdevitem(spritename, title, text)
+	.services__item-img
+		.icon(class=`icon-${spritename}`)
+	.services__item-title= title
+	.services__item-text= text
+	a.services__item-button(href="#") MORE DETAILS
+
+
+mixin person_item(img, number, name, firm, order)
+	.feedback__person-item(style=`order: ${order}`)
+		img.feedback__person-item--img(src=`images/person/${img}`)
+		.feedback__person-item--number= number
+		.feedback__person-item--descr 
+			a(href="#")= name
+			a(href="#")= firm
+
+
+mixin footcontentadd(title, items)
+	.footer__left-content
+			h4.footer__left-content--title= title
+			each item in items
+				a(class="footer__left-content--item" href="#")= item

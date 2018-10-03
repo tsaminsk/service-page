@@ -1,0 +1,24 @@
+@import "../../node_modules/normalize.scss/normalize";
+
+@import "global/mixins";
+@import "global/fonts";
+@import "global/vars";
+@import "global/base";
+
+
+@import "global/icons";
+@import "global/sprite";
+@import "sections/blocks/section-title";
+@import "sections/blocks/feedback-person-item";
+@import "sections/blocks/clients-item";
+
+
+@import "sections/banner";
+@import "sections/header";
+@import "sections/about";
+@import "sections/blocks/services-item";
+@import "sections/services";
+@import "sections/feedback";
+@import "sections/clients";
+@import "sections/queries";
+@import "sections/footer";

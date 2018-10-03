@@ -1,0 +1,50 @@
+
+.feedback__person{
+		display: flex;
+		margin-left: -20px;
+		overflow: hidden;
+		width: 66.7%;
+
+
+		&-item{
+			width: 202px;
+			margin-left: 20px;
+			position: relative;
+
+			&--number,
+			&--descr {
+				position: absolute;
+				bottom: 9px;
+				height: 33px;
+				
+				background-color: #fff;
+				font-family: $ff-menu;
+				color:  #272626;
+				font-size: 12px;/* Приближение из-за подстановки шрифтов */
+				font-weight: 400;
+				/* Приближение из-за подстановки шрифтов */
+				text-align: left
+
+
+			}
+			&--number{
+				left: 9px;
+				width: 43px;
+				line-height: 30px;
+				text-align: center;
+			}
+
+			&--descr{
+				right: 9px;
+				width: 136px;
+				padding-top: 3px;
+				padding-left: 10px;
+
+				& a{
+					text-decoration: none;
+					color: #000;
+					display: block;
+				}
+			}
+		}
+	}

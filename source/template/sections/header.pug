@@ -1,0 +1,25 @@
+.header
+	.header__logo
+		a.header__logo-link(href="#")
+			include blocks/logo
+
+
+	.header__menu
+		ul.header__menu-items
+			each item in menuItems
+				if item === 'Home'
+					li.header__menu-item
+						a.header__menu-link.header__menu-link--active(href="#")= item
+				else
+					li.header__menu-item
+						a.header__menu-link(href="#")= item
+
+	ul.header__social-icons
+		each item, key in linkUrls
+			li.header__social-icon
+				a(class="header__social-icon--linc icon icon-" + key href="http://" + item target="_blank")
+
+				
+				
+
+

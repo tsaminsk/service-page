@@ -1,0 +1,15 @@
+section.footer.wrapper
+	.footer__left
+		+footcontentadd('Product', proditems)
+		+footcontentadd('Learn', learnitems)
+		+footcontentadd('Company', companyitems)
+	.footer__right
+		form(action="#").footer__right-form
+			input#footer__right-form--email(type="email" placeholder="Your email")
+			input#footer__right-form--submit(type="submit" value="Subscribe")
+		.footer__right-social
+			each item, key in iconsocialfoot
+				.footer__right-social--item
+					a.icon(class="icon-" + key href="http://" + item target="_blank")
+
+

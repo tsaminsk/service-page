@@ -1,0 +1,104 @@
+.footer{
+	background-color: #494949;
+	height: 211px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__left{
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 43px;
+}
+
+.footer__left-content{
+	display: flex;
+	flex-direction: column;
+	margin-right: 80px;
+}
+
+.footer__left-content--title{
+	font-family: $ff-ftitle;
+	color:  #e5e5e5;
+	font-size: 13px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	line-height: 26px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	transform: scaleY(1.1729);
+	text-transform: uppercase;
+}
+
+.footer__left-content--item{
+	font-family: $ff-ftext;
+	color:  #ffffff;
+	font-size: 11px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 34px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	transform: scaleY(1.176);
+	text-decoration: none;
+
+	&:hover{
+		color: #487d87;
+	}
+}
+
+.footer__right{
+	height: 100%;
+	margin-right: 53px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.footer__right-form{
+	background-color:  #cccccc;
+	width: 257px;
+	height: 44px;
+	padding-left: 15px;
+	margin-top: 42px;
+}
+
+#footer__right-form--email{
+	width: 134px;
+	font-family: $ff-ftext;
+	color:  #4f4e4e;
+	font-size: 13px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 26px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	transform: scaleY(1.1745);
+}
+
+#footer__right-form--submit{
+	background-color:  #0072bc;
+	width: 102px;
+	height: 34.5px;
+	margin-top: 4.2px;
+	font-family: $ff-ftext;
+	color:  #ffffff;
+	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 26px;
+	text-align: center;
+	transform: scaleY(1.1745);
+}
+
+.footer__right-social{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 43px;
+}
+
+.footer__right-social--item{
+	background-color: #2e2e2e;
+	border-radius: 50%;
+	width: 35px;
+	height: 41px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 8px;
+}

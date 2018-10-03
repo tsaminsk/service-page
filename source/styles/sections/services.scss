@@ -1,0 +1,41 @@
+.services{
+	position: relative;
+}
+
+.services__items{
+	width: 100%;
+	height: 556px;
+	display: flex;
+	justify-content: space-around;
+}
+
+/*all .services__item in blocks*/
+
+.services__arrow{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 65px;
+	height: 32px;
+	display: flex;
+	justify-content: space-between;
+	color: #373636;
+	font-size: 20px;
+
+	&-left,
+	&-right{
+		width: 32px;
+		background-color: #089eac;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+
+#services-to-left,
+#services-to-right {
+	transform:scaleY(2);
+	cursor: pointer;
+}
+

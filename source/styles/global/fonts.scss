@@ -1,0 +1,53 @@
+
+
+@font-face {
+	font-family: 'Sansation Regular';
+	src: url('../fonts/Sansation Regular/SansationRegular.eot');
+	src: local('../fonts/Sansation Regular/Sansation Regular'), local('SansationRegular'),
+		url('../fonts/Sansation Regular/SansationRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Sansation Regular/SansationRegular.woff') format('woff'),
+		url('../fonts/Sansation Regular/SansationRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadPro/MyriadPro-Regular.eot');
+	src: local('../fonts/MyriadPro/Myriad Pro Regular'), local('MyriadPro-Regular'),
+		url('../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEOTERIC';
+  src: url("../fonts/NEOTERIC/NEOTERICc - Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica LT Std Bold';
+	src: url('../fonts/HelveticaLTStd/HelveticaLTStd-Bold.eot');
+	src: local('../fonts/HelveticaLTStd/Helvetica LT Std Bold'), local('HelveticaLTStd-Bold'),
+		url('../fonts/HelveticaLTStd/HelveticaLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaLTStd/HelveticaLTStd-Bold.woff') format('woff'),
+		url('../fonts/HelveticaLTStd/HelveticaLTStd-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica LT Std Light';
+	src: url('../fonts/HelveticaLTStd/HelveticaLTStd-LightCond.eot');
+	src: local('../fonts/HelveticaLTStd/Helvetica LT Std Light Condensed'), local('HelveticaLTStd-LightCond'),
+		url('../fonts/HelveticaLTStd/HelveticaLTStd-LightCond.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaLTStd/HelveticaLTStd-LightCond.woff') format('woff'),
+		url('../fonts/HelveticaLTStd/HelveticaLTStd-LightCond.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}

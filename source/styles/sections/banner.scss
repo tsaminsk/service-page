@@ -1,0 +1,89 @@
+.banner{
+	height: 552px; /*временно*/
+	background: #ccc url('../images/banner-bg.png') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.banner__slide{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.banner__slide-left, .banner__slide-right{
+	color: #7f789a;
+	position: absolute;
+	top: 228px;
+	border: 1px solid #7f789a;
+	cursor: pointer;
+	width: 29px;
+	height: 33px;
+	text-align: center;
+	padding-top: 6px;
+}
+.banner__slide-left{
+	left: 43px;	
+}
+.banner__slide-right{
+	right: 43px;
+}
+.banner__description{
+	width: 538px;
+	height: 215px;
+	top: 128px;
+	margin: 0 auto;
+	border-top: 1px solid #5f577d;
+	position: relative;
+	text-align: center;
+}
+.banner__description::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 180px;
+	height: 195px;
+	border-left: 1px solid #5f577d;
+	border-bottom: 1px solid #5f577d;
+}
+.banner__description::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 180px;
+	height: 195px;
+	border-right: 1px solid #5f577d;
+	border-bottom: 1px solid #5f577d;
+}
+.banner__title {
+	font-family: $ff-menu;
+	color:  #fff;
+	font-size: 41px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	margin: 32px auto 26px;/* Приближение из-за подстановки шрифтов */
+	/*text-align: center;*/
+	/*transform: scaleY(1.1689);*/
+	text-transform: uppercase;
+}
+.banner__text {
+	font-family: $ff-menu;
+	color:  #fff;
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0 auto;
+}
+.banner__button{
+	@include centerer-x();
+	bottom: 0px;
+	
+	width: 112px;
+	height: 37px;
+	font-family: $ff-menu;
+	color:  #fff;
+	font-size: 12px;
+	line-height: 28px;/* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	text-transform: uppercase;
+	background-color: rgba(0,0,0,.0);
+}

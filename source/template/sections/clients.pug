@@ -1,0 +1,6 @@
+section.clients.wrapper
+	+section-title('clients', 'light')
+	.clients__content
+		each url, name in clientsItem
+			.clients__content-item
+				a.icon(class="icon-" + name href="http://" + url target="_blank")

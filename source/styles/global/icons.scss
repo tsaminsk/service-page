@@ -1,0 +1,93 @@
+@import "sprite";
+
+.icon {
+	display: inline-block;
+	/*background-color: #000;*/
+}
+.icon-fbhead {
+  @include sprite($fbhead);
+}
+
+.icon-twhead {
+  @include sprite($twhead);
+}
+
+.icon-gphead {
+  @include sprite($gphead);
+}
+
+.icon-arrowleft {
+  @include sprite($arrowleft);
+}
+
+.icon-webdev {
+	@include sprite($webdev)
+}
+
+.icon-html5 {
+	@include sprite($html5)
+}
+
+.icon-react {
+	@include sprite($react)
+}
+
+.icon-feedbackleft {
+	@include sprite($feedbackleft)
+}
+
+.icon-invision {
+	@include sprite($invision)
+}
+
+.icon-infosys {
+	@include sprite($infosys)
+}
+
+.icon-hcl {
+	@include sprite($hcl)
+}
+
+.icon-adobe {
+	@include sprite($adobe)
+}
+
+.icon-instagram {
+	@include sprite($instagram)
+}
+
+.icon-canva {
+	@include sprite($canva)
+}
+
+.icon-behance {
+	@include sprite($behance)
+}
+
+.icon-cisco {
+	@include sprite($cisco)
+}
+
+.icon-dr {
+	@include sprite($dr)
+}
+
+.icon-be {
+	@include sprite($be)
+}
+
+.icon-gp {
+	@include sprite($gp)
+}
+
+.icon-tw {
+	@include sprite($tw)
+}
+
+.icon-in {
+	@include sprite($in)
+}
+
+.icon-fb {
+	@include sprite($fb)
+}

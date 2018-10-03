@@ -1,0 +1,39 @@
+{
+  "name": "service-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsaminsk/service-page.git"
+  },
+  "keywords": [],
+  "author": "Talai S.A.",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-fs": "0.0.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp.spritesmith": "^6.3.0",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  },
+  "description": "my practice of layout",
+  "bugs": {
+    "url": "https://github.com/tsaminsk/service-page/issues"
+  },
+  "homepage": "https://github.com/tsaminsk/service-page#readme"
+}
