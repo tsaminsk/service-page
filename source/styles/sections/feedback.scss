@@ -12,6 +12,19 @@
 		width: 33.3%;
 		padding: 0 50px;
 
+		@media (max-width: 1000px){
+			width: calc(100% - 666px);
+			padding: 0 15px;
+		}
+
+		@media (max-width: 850px){
+			width: calc(100% - 444px);
+		}
+
+		@media (max-width: 620px){
+			width: calc(100% - 222px);
+		}
+
 		&-text{
 			font-family: $ff-menu;
 			color:  #cdc8c8;
@@ -21,6 +34,13 @@
 			text-align: center;
 			position: relative;
 			margin-bottom: 55px;
+
+			@media (max-width: 620px){
+				font-size: 14px;
+				margin-bottom: 20px;
+				line-height: 16px;
+
+			}
 
 			&::after{
 				content:'';

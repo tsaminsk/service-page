@@ -13,11 +13,19 @@
 				else
 					li.header__menu-item
 						a.header__menu-link(href="#")= item
+	.header__menu-mobile
+		#menuToggle
+			input(type="checkbox")
+			span#span1
+			span#span2
+			span#span3
+			
 
 	ul.header__social-icons
 		each item, key in linkUrls
 			li.header__social-icon
 				a(class="header__social-icon--linc icon icon-" + key href="http://" + item target="_blank")
+
 
 				
 				

@@ -5,6 +5,18 @@
 		overflow: hidden;
 		width: 66.7%;
 
+		@media (max-width: 1000px){
+			width: 666px;
+		}
+
+		@media (max-width: 850px){
+			width: 444px;
+		}
+
+		@media (max-width: 620px){
+			width: 222px;
+		}
+
 
 		&-item{
 			width: 202px;

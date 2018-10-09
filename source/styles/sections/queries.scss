@@ -3,14 +3,27 @@
 	background-color:  #097e89;
 	height: 173px;
 	display: flex;
+
 	justify-content: space-between;
 	align-items: center;
+
+	@media (max-width: 850px){
+		flex-wrap: wrap;
+		justify-content: center;
+		height: 210px;
+
+	}
 
 	&__info{
 		width: 330px;
 		font-family: $ff-menu;
 		color:  #fff;
 		margin-left: 43px;
+
+		@media (max-width: 850px){
+			width: 100%;
+			margin-left: 0;
+		}
 
 		&-title{
 			/*font-family: $ff-menu;
@@ -20,6 +33,11 @@
 			line-height: 34px;/* Приближение из-за подстановки шрифтов */
 			text-align: left;
 			transform: scaleY(1.4393);
+
+			@media (max-width: 850px){
+				line-height: 20px;
+				text-align: center;
+			}
 		}
 
 		&-text{
@@ -30,6 +48,11 @@
 			line-height: 26px;/* Приближение из-за подстановки шрифтов */
 			text-align: left;
 			transform: scaleY(1.4393);
+
+			@media (max-width: 850px){
+				line-height: 16px;
+				text-align: center;
+			}
 		}
 	}
 
@@ -41,9 +64,10 @@
 			margin-right: 53px;
 			border-radius: 2px;
 			border: 1px solid #fff;
-			/*
-			width: 506px;
-			height: 45px;*/
+			
+			@media (max-width: 850px){
+				margin-right: 0;
+			}
 		}
 
 	}
@@ -62,6 +86,14 @@
 	transform: scaleY(1.0628);
 	width: 200px;
 	padding-left: 30px;
+
+	@media (max-width: 520px){
+		width: 130px;
+	}
+
+	@media (max-width: 380px){
+		width: 100px;
+	}
 }
 
 #queries__subscribe-form--name{
@@ -80,4 +112,8 @@
 	line-height: 28px;
 	text-align: center;
 	transform: scaleY(1.0628);
+
+	@media (max-width: 380px){
+		width: 80px;
+	}
 }

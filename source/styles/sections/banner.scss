@@ -1,7 +1,15 @@
 .banner{
 	height: 552px; /*временно*/
-	background: #ccc url('../images/banner-bg.png') center/cover no-repeat;
+	background: url('../images/banner-bg.png') center/cover no-repeat;
     overflow: hidden;
+
+    @media (max-width: 800px){
+    	height: 450px;
+    }
+
+    @media (max-width: 600px){
+		height: 300px;
+	}
 }
 
 .banner__slide{
@@ -20,12 +28,31 @@
 	height: 33px;
 	text-align: center;
 	padding-top: 6px;
+
+	@media (max-width: 800px){
+		top: 138px;
+	}
+
+	@media (max-width: 600px){
+		top: 83px;
+	}
+
+	@media (max-width: 450px){
+		top: 183px;
+	}
 }
 .banner__slide-left{
 	left: 43px;	
+
+	@media (max-width: 600px){
+		left: 20px;
+	}
 }
 .banner__slide-right{
 	right: 43px;
+
+	@media (max-width: 600px){
+		right: 20px;	}
 }
 .banner__description{
 	width: 538px;
@@ -35,36 +62,64 @@
 	border-top: 1px solid #5f577d;
 	position: relative;
 	text-align: center;
+
+	@media (max-width: 800px){
+		width: 438px;
+		height: 165px;
+		top: 80px;
+	}
+
+	@media (max-width: 600px){
+		width: 318px;
+		height: 125px;
+		top: 50px;
+	}
 }
-.banner__description::before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 180px;
-	height: 195px;
-	border-left: 1px solid #5f577d;
-	border-bottom: 1px solid #5f577d;
-}
+.banner__description::before,
 .banner__description::after{
 	content: '';
 	position: absolute;
 	top: 0;
-	right: 0;
-	width: 180px;
+	width: 170px;
 	height: 195px;
-	border-right: 1px solid #5f577d;
 	border-bottom: 1px solid #5f577d;
+
+	@media (max-width: 800px){
+		width: 130px;
+		height: 145px;
+	}
+
+	@media (max-width: 600px){
+		width: 80px;
+		height: 105px;
+	}
+
+}
+.banner__description::before{
+	left: 0;
+	border-left: 1px solid #5f577d;
+}
+.banner__description::after{
+	right: 0;
+	border-right: 1px solid #5f577d;
 }
 .banner__title {
 	font-family: $ff-menu;
 	color:  #fff;
-	font-size: 41px;/* Приближение из-за подстановки шрифтов */
+	font-size: 41px;
 	font-weight: 700;
-	margin: 32px auto 26px;/* Приближение из-за подстановки шрифтов */
-	/*text-align: center;*/
-	/*transform: scaleY(1.1689);*/
+	margin: 32px auto 26px;
 	text-transform: uppercase;
+
+	@media (max-width: 800px){
+		font-size: 31px;
+		margin: 22px auto 16px;
+	}
+
+	@media (max-width: 600px){
+		font-size: 21px;
+		margin: 12px auto 10px;
+	}
 }
 .banner__text {
 	font-family: $ff-menu;
@@ -72,6 +127,15 @@
 	font-size: 12px;
 	line-height: 18px;
 	margin: 0 auto;
+
+	@media (max-width: 800px){
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	@media (max-width: 600px){
+		font-size: 10px;
+	}
 }
 .banner__button{
 	@include centerer-x();

@@ -8,6 +8,14 @@
 	font-family: $ff-menu;
 	color:  #f7f7f7;
 
+	@media (max-width: 750px){
+		width: 50%;
+	}
+
+	@media (max-width: 500px){
+		width: 100%;
+	}
+
 
 	&--active {
 		background-color: #097e89;
